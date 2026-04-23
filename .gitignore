@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/*.duckdb
+dbt_project/*.duckdb.wal
+
+# Generated Data
+data_gen/csv/
+
+# Node & Evidence
+node_modules/
+build/
+.svelte-kit/
+.evidence/
+.DS_Store

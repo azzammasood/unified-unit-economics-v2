@@ -1,0 +1,15 @@
+{
+  "name": "unified-unit-economics",
+  "version": "1.0.0",
+  "description": "BI as Code Pipeline for Crumble",
+  "scripts": {
+    "build": "pip3 install -r requirements.txt && python3 data_gen/generate_data.py && cd dbt_project && dbt deps && dbt build --profiles-dir . && cd .. && evidence build",
+    "sources": "evidence sources",
+    "dev": "evidence dev"
+  },
+  "dependencies": {
+    "@evidence-dev/evidence": "^3.0.0",
+    "@evidence-dev/duckdb": "^3.0.0",
+    "@evidence-dev/core-components": "^3.0.0"
+  }
+}

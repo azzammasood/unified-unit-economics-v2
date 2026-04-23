@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fct_unit_economics
+    description: "Fact table for unit economics calculated across sales, marketing, and logistics"
+    columns:
+      - name: date
+        description: "The date of the transactions"
+        tests:
+          - not_null
+      - name: vertical
+        description: "The business vertical (Ride Hailing, Food Delivery, Courier)"
+        tests:
+          - not_null
+      - name: total_orders
+        description: "Total number of orders"
+      - name: revenue
+        description: "Total revenue generated"
+      - name: rider_payouts
+        description: "Total payouts to riders"
+      - name: direct_marketing_spend
+        description: "Total marketing spend"
+      - name: distance_km
+        description: "Total distance covered in kilometers"
+      - name: fuel_consumed_liters
+        description: "Total fuel consumed in liters"
+      - name: net_contribution_margin
+        description: "Calculated net contribution margin"
+        tests:
+          - not_null
