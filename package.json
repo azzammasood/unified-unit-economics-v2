@@ -8,8 +8,8 @@
     "dev": "evidence dev"
   },
   "dependencies": {
-    "@evidence-dev/evidence": "^3.0.0",
-    "@evidence-dev/duckdb": "^3.0.0",
-    "@evidence-dev/core-components": "^3.0.0"
+    "@evidence-dev/evidence": "latest",
+    "@evidence-dev/duckdb": "latest",
+    "@evidence-dev/core-components": "latest"
   }
 }
