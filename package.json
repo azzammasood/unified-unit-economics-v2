@@ -4,7 +4,7 @@
   "type": "module",
   "description": "BI as Code Pipeline for Crumble",
   "scripts": {
-    "build": "uv venv && uv pip install -r requirements.txt && .venv/bin/python data_gen/generate_data.py && cd dbt_project && ../.venv/bin/dbt deps --profiles-dir . && ../.venv/bin/dbt build --profiles-dir . && cd .. && evidence build",
+    "build": "uv venv && uv pip install -r requirements.txt && .venv/bin/python data_gen/generate_data.py && cd dbt_project && ../.venv/bin/dbt deps --profiles-dir . && ../.venv/bin/dbt build --profiles-dir . && cd .. && evidence sources && evidence build",
     "sources": "evidence sources",
     "dev": "evidence dev"
   },
