@@ -4,7 +4,7 @@
   "type": "module",
   "description": "BI as Code Pipeline for Crumble",
   "scripts": {
-    "build": "pip3 install -r requirements.txt && python3 data_gen/generate_data.py && cd dbt_project && dbt deps && dbt build --profiles-dir . && cd .. && evidence build",
+    "build": "python3 -m pip install -r requirements.txt && python3 data_gen/generate_data.py && cd dbt_project && python3 -m dbt deps --profiles-dir . && python3 -m dbt build --profiles-dir . && cd .. && evidence build",
     "sources": "evidence sources",
     "dev": "evidence dev"
   },
